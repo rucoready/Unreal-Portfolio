@@ -7,6 +7,8 @@
 ● 제작기간 : 5주 <br/>
 
 ##사용툴<br/>
-● Microsoft Visual Studio Community
-● Blender
-● GithubDesktop
+● Microsoft Visual Studio Community<br/>
+● Blender<br/>
+● GithubDesktop<br/>
+
+
