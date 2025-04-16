@@ -6,7 +6,7 @@
 ● 규모 : 2인 <br/>
 ● 제작기간 : 5주 <br/>
 
-## 사용툴<br/>
+## 사용한 개발 도구<br/>
 ● Microsoft Visual Studio Community<br/>
 ● Blender<br/>
 ● GithubDesktop<br/>
