@@ -12,8 +12,7 @@
 ● GithubDesktop<br/>
 
 # 데모 동영상  
-> Youtube<br/>
-<Single>      
+> Youtube<br/>   
 [<img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="320">](https://youtu.be/PPo4rxRjsWc)  
 
 # Packging File
