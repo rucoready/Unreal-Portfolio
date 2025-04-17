@@ -208,26 +208,36 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 &nbsp;&nbsp;&nbsp;&nbsp;● 보스전 용 석상<br/>
 
 <table style="text-align: center;">
-  <thead>
-    <tr>
-      <th>Grux 1</th>
-      <th>Dog 1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472" width="150"/></td>
-      <td><img src="https://github.com/user-attachments/assets/bbd4e4be-a4dd-4b1b-ad49-3ab117255f86" width="150"/></td>
-    </tr>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a" width="150"/></td>
-      <td><img src="https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6" width="150"/></td>
-    </tr>
-    <tr>
-      <td><img src="https://via.placeholder.com/150" width="150"/></td>
-      <td><img src="https://via.placeholder.com/150" width="150"/></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/584809ae-fa0f-42f1-a62b-7e56e99005a1" width="100"><br>
+      경험치
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/e9ae91f6-f5ef-4206-87fd-533d9d5cac52" width="100"><br>
+      소울크리스탈
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/569ae9a7-daba-41cd-b389-e5d04b4c55cd" width="100"><br>
+      일반크리스탈
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/5ed60976-7b67-4fae-a641-a0c196f7495e" width="100"><br>
+      일반크리스탈2
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/a4c683e0-e05e-4c21-96b0-a7931b23c295" width="100"><br>
+      데몬소드
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/e489264a-f3f0-4f1c-ba8e-56f352c8589d" width="100"><br>
+      불
+    </td>
+  </tr>
 </table>
 
 ## Crafting
