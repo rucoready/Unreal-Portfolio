@@ -25,5 +25,6 @@
 # 기술 설명
 
 ## Boss
-
+● 제작방식 : BehaviorTree <br/>
+![Image](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6)
 
