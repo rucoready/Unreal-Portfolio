@@ -14,7 +14,9 @@
 # 데모 영상 
 | SinglePlay | MultiPlay |
 | --- | --- |
-| <a href="https://youtu.be/PPo4rxRjsWc"><img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="300"></a> | <a href="https://youtu.be/9zh2KllxqSw"><img src="https://img.youtube.com/vi/9zh2KllxqSw/0.jpg" width="300"></a> |
+| <a href="https://youtu.be/PPo4rxRjsWc"><img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="300"></a> | <a href="https://youtu.be/9zh2KllxqSw"><img src="https://img.youtube.com/vi/9zh2KllxqSw/0.jpg" width="300"></a> | <br/>
+● SinglePlay영상 -> CombatSystem 설명<br/>
+● MultiPlay영상 -> 멀티플레이 및 크래프팅 설명<br/>
 
 # Packging File
 ● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link <br/>
