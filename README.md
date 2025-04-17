@@ -199,6 +199,14 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 
 ![Image](https://github.com/user-attachments/assets/a255c6c9-c8b6-4ad0-b2cc-7c8a914b5bb9) </div>
 
+## 오브젝트
+플레이어를 도와주거나 방해하거나 디테일이 추가된 요소<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 경험치 구슬<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 확률성 아이템<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 보스전 스폰 검<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 보스전 불 액터<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 보스전 용 석상<br/>
+
 ## Crafting
 크래프팅 시스템<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 데이터 테이블로 관리하는 쉬운 에셋추가 <br/>
