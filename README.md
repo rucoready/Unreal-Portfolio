@@ -54,7 +54,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 아이템 확률드랍 <br/>
 | Grux | Dog |
 |:--:|:--:|
-| <div align="center"> ![Phase1 Thumbnail](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) <br/><sub>썸네일 1</sub> </div> | <div align="center"> ![Phase2 Thumbnail](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) <br/><sub>썸네일 2</sub> </div> |
+| <div align="center"> ![Phase1 Thumbnail](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) <br/><sub></sub> </div> | <div align="center"> ![Phase2 Thumbnail](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) <br/><sub></sub> </div> |
 | <div align="center"> ![Phase1 Explanation](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222) <br/><sub>설명 1</sub> </div> | <div align="center"> ![Phase2 Explanation](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d) <br/><sub>설명 2</sub> </div> |
 
 
