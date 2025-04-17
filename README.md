@@ -28,6 +28,7 @@
 ● BehaviorTree 동작방식 <br/>
 ● BossWidget 관리 <br/>
 ● BossBlackBoard 관리 <br/>
+● 네트워크 동기화 <br/>
 
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
