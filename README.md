@@ -26,7 +26,7 @@
 
 ## Boss
 던전 마지막에 배치된 복잡한 AI<br/>
-●&nbsp;&nbsp;&nbsp;&nbsp;BehaviorTree 동작방식 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;●BehaviorTree 동작방식 <br/>
 ●&nbsp;&nbsp;&nbsp;&nbsp;BossWidget 관리 <br/>
 ●&nbsp;&nbsp;&nbsp;&nbsp;BossBlackBoard 관리 <br/>
 ●&nbsp;&nbsp;&nbsp;&nbsp;네트워크 동기화 <br/>
