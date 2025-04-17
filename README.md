@@ -26,6 +26,7 @@
 
 ## Boss
 ● 제작방식 : BehaviorTree <br/>
-![Image](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) <br/>
-![Image](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) <br/>
+| 왼쪽 이미지 | 오른쪽 이미지 |
+|-------------|---------------|
+| ![Image1](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) | ![Image2](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) |
 
