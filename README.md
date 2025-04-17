@@ -36,7 +36,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● Blackboard과 BehaviorTree의 상호작용<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 각각 Task에서 독립적인 패턴 구현<br/>
 
-> **Boss 구조**<br/>
+> **Boss 설계도**<br/>
 
 ![Image](https://github.com/user-attachments/assets/b17883c1-38a0-46f5-8e1f-eea31f9bd5ad)<br/>
 
