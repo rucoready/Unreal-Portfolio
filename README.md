@@ -233,7 +233,7 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
     <td style="height: 140px;">
       <div style="display: flex; flex-direction: column; align-items: center; min-height: 140px;">
         <img src="https://github.com/user-attachments/assets/5ed60976-7b67-4fae-a641-a0c196f7495e" width="100">
-        <span style="margin-top: 8px;">확률성 아이템2</span>
+        <span style="margin-top: 8px;">확률성 아이템 </span>
       </div>
     </td>
   </tr>
