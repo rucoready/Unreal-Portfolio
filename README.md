@@ -258,7 +258,7 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 ![Image](https://github.com/user-attachments/assets/3e3203b2-71dd-47ea-b404-84e118c8f04e) <br/>
 > **Demon Sword (보스맵 스폰 검) 이동 방식**<br/>
 <details>
-  <summary><strong>DemonSword.cpp 전체 코드 보기</strong></summary>
+  <summary><strong>DemonSword.cpp 코드 보기</strong></summary>
 
   <pre style="max-height: 500px; overflow-y: auto; background-color: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; font-size: 14px;">
 <code>
