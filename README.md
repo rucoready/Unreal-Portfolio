@@ -251,7 +251,12 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
       </div>
     </td>
   </tr>
-</table>
+</table><br/>
+
+> **Fracture Mesh**<br/>
+![Image](https://github.com/user-attachments/assets/3e3203b2-71dd-47ea-b404-84e118c8f04e) <br/>
+
+
 
 ## Crafting
 크래프팅 시스템<br/>
