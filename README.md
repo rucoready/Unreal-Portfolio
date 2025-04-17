@@ -48,7 +48,7 @@
 | Pattern Nodes | All Nodes |
 |:--:|:--:|
 | ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
-> **Service Calculate Distance Node**
+> **Service_Calculate Distance Node**
 ```cpp
 #include "Boss/Service_CalculateDistanceBetween.h"
 #include "Player/PixelCodeCharacter.h"
@@ -113,6 +113,87 @@ void UService_CalculateDistanceBetween::TickNode(UBehaviorTreeComponent& OwnerCo
 |:--:|:--:|
 | <div align="center"> ![왼쪽 위](https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472) </div> | <div align="center"> ![오른쪽 위](https://github.com/user-attachments/assets/bbd4e4be-a4dd-4b1b-ad49-3ab117255f86) </div> |
 | <div align="center"> ![왼쪽 아래](https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a) </div> | <div align="center"> ![오른쪽 아래](https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6) </div> |
+
+> **Task_DogBartMoveToPlayer Node**
+```cpp
+#include "Task_DogBartMoveToPlayer.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/BTTaskNode.h"
+#include "DogBartAIController.h"
+#include "DogBart.h"
+#include "NavigationSystem.h"
+
+
+UTask_DogBartMoveToPlayer::UTask_DogBartMoveToPlayer(FObjectInitializer const& ObjectInitializer)
+{
+	NodeName = TEXT("Move To nearest Player");
+}
+
+EBTNodeResult::Type UTask_DogBartMoveToPlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+{
+
+    UBlackboardComponent* BlackboardComp = OwnerComp.GetBlackboardComponent();
+
+    if (BlackboardComp)
+    {
+        // 블랙보드에서 벡터 값을 가져옵니다.
+        FVector NearestPlayerLocation = BlackboardComp->GetValueAsVector(TEXT("DetectedPlayerLoc"));
+
+        if (UNavigationSystemV1* NavSys = UNavigationSystemV1::GetCurrent(GetWorld()))
+        {
+            ADogBartAIController* dogBartController = Cast<ADogBartAIController>(OwnerComp.GetAIOwner());
+            if (dogBartController)
+            {
+                
+                dogBartController->MoveToLocation(NearestPlayerLocation);
+            }
+        }      
+    }
+    return EBTNodeResult::Failed;
+}
+```
+
+> **Task_DogBartPatrol Node**
+```cpp
+#include "Task_DogBartPatrol.h"
+#include "DogBartAIController.h"
+#include "NavigationPath.h"
+#include "AI/Navigation/NavigationTypes.h"
+#include "NavigationSystem.h"
+#include "GameFramework/Actor.h"
+
+UTask_DogBartPatrol::UTask_DogBartPatrol(FObjectInitializer const& ObjectInitializer)
+{
+	NodeName = TEXT("DogBart Patrol");
+	bNotifyTick = true;
+}
+
+EBTNodeResult::Type UTask_DogBartPatrol::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+{
+	TickTask(OwnerComp, NodeMemory, 0.0f);
+	ADogBartAIController* dogBartController = Cast<ADogBartAIController>(OwnerComp.GetAIOwner());
+	if (dogBartController)
+	{
+		FVector origin = dogBartController->GetPawn()->GetActorLocation();
+		navSys = FNavigationSystem::GetCurrent<UNavigationSystemV1>(this);
+		FVector randomLocation;
+		if (navSys)
+		{
+			if (navSys->K2_GetRandomReachablePointInRadius(GetWorld(), origin, randomLocation, 1500.0))
+			{
+				dogBartController->MoveToLocation(randomLocation);
+			}
+		}
+	}
+	return EBTNodeResult::Succeeded;
+}
+
+void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
+{
+	Super::TickTask(OwnerComp, NodeMemory, DeltaSeconds);
+	currentTime += DeltaSeconds;
+}
+```
 
 > **StateMachine**<br/>
 
