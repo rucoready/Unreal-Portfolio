@@ -13,7 +13,7 @@
 
 # 데모 동영상  
 > Youtube<br/>
-[![Youtube](https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg)](https://youtu.be/PPo4rxRjsWc)<br/>
+[<img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="320">](https://youtu.be/PPo4rxRjsWc)  
 
 # Packging File
 ● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link <br/>
