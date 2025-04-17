@@ -214,8 +214,9 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
     <td><img src="https://via.placeholder.com/100" width="100"></td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align: center;"><img src="https://via.placeholder.com/100" width="100"></td>
-    <td></td> <!-- 비어있는 칸을 추가하여 중앙 정렬 -->
+    <td></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td>
+    <td></td>
   </tr>
 </table>
 
