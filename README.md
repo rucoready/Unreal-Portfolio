@@ -411,6 +411,11 @@ void ADemonSword::Tick(float DeltaTime)
 ![Image](https://github.com/user-attachments/assets/dbbe1d72-bcb0-4e4e-b180-da0c85012cec)<br/>
 ![Image](https://github.com/user-attachments/assets/ec505ee7-4c8e-4448-b3b2-49e4b52d151a)<br/>
 
+## 프로젝트 목표<br/>
+✅ 멀티플레이 환경구축<br/>
+✅ BehaviorTree를 사용한 AI 제작<br/>
+✅ 크래프팅 시스템의 구현<br/>
+✅ 한사이클이 돌아가는 rpg 게임 구현<br/>
 
 
 
