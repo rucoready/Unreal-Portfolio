@@ -29,6 +29,9 @@
 ● BossWidget 관리 <br/>
 ● BossBlackBoard 관리 <br/>
 ● 네트워크 동기화 <br/>
+● Service Node, Decorator Node를 사용한 여러가지 조건 체크<br/>
+● Blackboard과 BehaviorTree의 상호작용<br/>
+● 각각 Task에서 독립적인 패턴 구현<br/>
 
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
@@ -38,7 +41,5 @@
 |:--:|:--:|
 | ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
 
-● Service Node, Decorator Node를 사용한 여러가지 조건 체크<br/>
-● Blackboard과 BehaviorTree의 상호작용<br/>
-● 각각 Task에서 독립적인 패턴 구현<br/>
+
 
