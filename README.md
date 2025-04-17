@@ -256,7 +256,136 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 > **Fracture Mesh**<br/>
 
 ![Image](https://github.com/user-attachments/assets/3e3203b2-71dd-47ea-b404-84e118c8f04e) <br/>
+> **Demon Sword (보스맵 스폰 검) 이동 방식**<br/>
+<details>
+  <summary><strong>DemonSword.cpp 전체 코드 보기</strong></summary>
 
+  <pre style="max-height: 500px; overflow-y: auto; background-color: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; font-size: 14px;">
+<code>
+#include "DemonSword.h"
+#include "Components/StaticMeshComponent.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Components/CapsuleComponent.h"
+#include "Components/BoxComponent.h"
+#include "Kismet/KismetStringLibrary.h"
+#include "Player/PixelCodeCharacter.h"
+#include <../../../../../../../Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h>
+#include <../../../../../../../Source/Runtime/Engine/Classes/GameFramework/PlayerController.h>
+#include "Particles/ParticleSystemComponent.h"
+#include "Particles/ParticleSystem.h"
+#include "Kismet/GameplayStatics.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
+#include "CoreMinimal.h"
+#include "../../../../Plugins/FX/Niagara/Source/Niagara/Public/NiagaraFunctionLibrary.h"
+
+ADemonSword::ADemonSword()
+{
+    PrimaryActorTick.bCanEverTick = true;
+
+    swordComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("swordComp"));
+    sceneComp = CreateDefaultSubobject<USceneComponent>(TEXT("sceneComp"));
+    damageBox = CreateDefaultSubobject<UBoxComponent>(TEXT("damageBox"));
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> bossOBJ(TEXT("/Script/Engine.StaticMesh'/Game/KMS_AI/Boss_Alpernia/DemonSword/DemonSword.DemonSword'"));
+    if (bossOBJ.Succeeded())
+    {
+        swordComp->SetStaticMesh(bossOBJ.Object);
+    }
+    SetRootComponent(sceneComp);
+    swordComp->SetupAttachment(RootComponent);
+    damageBox->SetupAttachment(RootComponent);
+    swordComp->SetRelativeLocation(FVector(0, 0, 560));
+    swordComp->SetRelativeRotation(FRotator(0, 180, 180));
+    swordComp->SetWorldScale3D(FVector(3.0));
+    damageBox->SetRelativeLocation(FVector(0, 0, 307));
+    damageBox->SetRelativeRotation(FRotator(0, 0, 0));
+    damageBox->SetWorldScale3D(FVector(1.75, 0.25, 7.0));
+    swordComp->SetWorldScale3D(FVector(2.0));
+    startLocation = swordComp->GetRelativeLocation();
+    targetLocation = startLocation + FVector(0, 0, -200);
+}
+
+void ADemonSword::BeginPlay()
+{
+    Super::BeginPlay();
+    upLoc = GetActorLocation() + FVector(0, 0, 800);
+    direction = (upLoc - GetActorLocation()).GetSafeNormal();
+    upNewLocation = GetActorLocation() + FVector(0, 0, 800);
+    damageBox->OnComponentBeginOverlap.AddDynamic(this, &ADemonSword::OnBeginOverlapSwordFloor);
+    swordCurrentHP = swordMaxHP;
+}
+
+void ADemonSword::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+    currentTime += DeltaTime;
+
+    float adjustDuration = moveDuration / 3.2f;
+    float alpha = FMath::Clamp(currentTime / adjustDuration, 0.0f, 1.0f);
+    float easedAlpha = 1.0f - FMath::Pow(1.0f - alpha, 2.0f);
+    FVector newLocation = FMath::Lerp(startLocation, targetLocation, easedAlpha);
+    swordComp->SetRelativeLocation(newLocation);
+
+    if (currentTime > 15.0f && currentTime <= 18.0f)
+    {
+        FVector upNewLocation2 = FMath::InterpEaseOut(GetActorLocation(), upNewLocation, (currentTime - 15) / 3 ,1.2f);
+        SetActorLocation(upNewLocation2);
+
+        if (!onceSound)
+        {
+            onceSound = true;
+            int32 value = FMath::RandRange(1, 3);
+            if (value == 1)
+                UGameplayStatics::PlaySoundAtLocation(this, UpSwordSound1, GetActorLocation());
+            else if (value == 2)
+                UGameplayStatics::PlaySoundAtLocation(this, UpSwordSound2, GetActorLocation());
+            else
+                UGameplayStatics::PlaySoundAtLocation(this, UpSwordSound3, GetActorLocation());
+        }
+    }
+
+    if (currentTime > 14.0f && !directionSet)
+    {
+        TArray<AActor*> foundCharacters;
+        UGameplayStatics::GetAllActorsOfClass(GetWorld(), APixelCodeCharacter::StaticClass(), foundCharacters);
+
+        int32 randomIndex = FMath::RandRange(0, foundCharacters.Num() - 1);
+        player = Cast<APixelCodeCharacter>(foundCharacters[randomIndex]);
+        directionSet = true;
+        setplayerLoc = player->GetActorLocation();
+        setDirection = player->GetActorLocation() - GetActorLocation();
+    }
+
+    if (currentTime > 15.5f && currentTime <= 17.0f)
+    {
+        FVector directionToPlayer = player->GetActorLocation() - GetActorLocation();
+        FRotator baseRotation = FRotationMatrix::MakeFromZ(-directionToPlayer).Rotator();
+        FQuat currentQuat = GetActorRotation().Quaternion();
+        FQuat targetQuat = baseRotation.Quaternion();
+        float lerpAlpha = FMath::Clamp((currentTime - 15.5f) / 2.5f, 0.0f, 1.0f);
+        newQuat = FQuat::Slerp(currentQuat, targetQuat, lerpAlpha);
+        SetActorRotation(newQuat);
+    }
+
+    if (currentTime > 18.0f && currentTime < 23.f)
+    {
+        FVector downDirection = -newQuat.GetUpVector();
+        float speed = 9000.0f;
+        FVector movement = downDirection * speed * DeltaTime;
+        FVector stingLoc = GetActorLocation() + movement;
+        SetActorLocation(stingLoc);
+    }
+
+    if (swordCurrentHP <= 0)
+    {
+        Destroy();
+        onceSound = false;
+        onceSound2 = false;
+    }
+}
+</code>
+  </pre>
+</details>
 
 
 ## Crafting
