@@ -44,7 +44,56 @@
 |:--:|:--:|
 | ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
 
-<pre> ```cpp float ACharacterBase::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) { float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser); // Update Hp CurrentPlayerState->UpdateHpState( CurrentPlayerState->CurrentHp - DamageAmount); // Update Hp Widget if (HPBarWidgetObject) HPBarWidgetObject->UpdateHPWidget(CurrentPlayerState->CurrentHp); // Is Dead? if (CurrentPlayerState->CurrentHp <= 0.001f) { if (!IsDead) { // Dead Event } } return FinalDamage; } ``` </pre><br/>
+```cpp
+#include "Boss/Service_CalculateDistanceBetween.h"
+#include "Player/PixelCodeCharacter.h"
+#include "Boss/BossApernia.h"
+#include "Kismet/GameplayStatics.h"
+#include "Boss/BossAIController.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "BehaviorTree/Services/BTService_BlackboardBase.h"
+
+UService_CalculateDistanceBetween::UService_CalculateDistanceBetween()
+{
+    NodeName = TEXT("Calculate Between Boss To Player");
+    currentTime = 0.0f;
+    timeToSelectPlayer = 10.0f; // 플레이어를 선택할 주기
+}
+
+void UService_CalculateDistanceBetween::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
+{
+    Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
+    currentTime += DeltaSeconds;
+
+    // BossApernia 찾기
+    ABossApernia* bossCharacter = Cast<ABossApernia>(UGameplayStatics::GetActorOfClass(GetWorld(), ABossApernia::StaticClass()));
+    if (!bossCharacter)
+    {
+        return;
+    }
+    if (currentTime >= timeToSelectPlayer)
+    {
+        currentTime = 0.0f;
+        TArray<AActor*> foundCharacters;
+        UGameplayStatics::GetAllActorsOfClass(GetWorld(), APixelCodeCharacter::StaticClass(), foundCharacters);
+
+        if (foundCharacters.Num() > 0)
+        {
+            int32 randomIndex = FMath::RandRange(0, foundCharacters.Num() - 1);
+            player = Cast<APixelCodeCharacter>(foundCharacters[randomIndex]);
+            if (player)
+            {
+                FVector playerLocation = player->GetActorLocation();
+            }
+        }
+    }
+    if (player)
+    {
+        float distance = FVector::Distance(bossCharacter->GetActorLocation(), player->GetActorLocation());
+        OwnerComp.GetBlackboardComponent()->SetValueAsFloat(GetSelectedBlackboardKey(), distance);
+    }
+}
+```
 
 ## Enemy AI
 맵에 배치된 기본적인 적AI<br/>
