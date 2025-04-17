@@ -14,7 +14,7 @@
 # 데모 영상
 | SinglePlay | MultiPlay |
 | --- | --- |
-| <a href="https://youtu.be/PPo4rxRjsWc"><img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="120"></a> | <a href="https://youtu.be/9zh2KllxqSw"><img src="https://img.youtube.com/vi/9zh2KllxqSw/0.jpg" width="120"></a> |
+| <a href="https://youtu.be/PPo4rxRjsWc"><img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="250"></a> | <a href="https://youtu.be/9zh2KllxqSw"><img src="https://img.youtube.com/vi/9zh2KllxqSw/0.jpg" width="250"></a> |
 
 # Packging File
 ● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link <br/>
