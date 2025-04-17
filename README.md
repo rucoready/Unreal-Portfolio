@@ -44,6 +44,8 @@
 |:--:|:--:|
 | ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
 
+<pre> ```cpp float ACharacterBase::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) { float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser); // Update Hp CurrentPlayerState->UpdateHpState( CurrentPlayerState->CurrentHp - DamageAmount); // Update Hp Widget if (HPBarWidgetObject) HPBarWidgetObject->UpdateHPWidget(CurrentPlayerState->CurrentHp); // Is Dead? if (CurrentPlayerState->CurrentHp <= 0.001f) { if (!IsDead) { // Dead Event } } return FinalDamage; } ``` </pre><br/>
+
 ## Enemy AI
 맵에 배치된 기본적인 적AI<br/>
 
