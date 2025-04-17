@@ -404,7 +404,7 @@ void ADemonSword::Tick(float DeltaTime)
 
 |   |   |   |
 |---|---|---|
-| ![첫 번째 이미지](https://github.com/user-attachments/assets/fb6f9afd-9fa6-4dd4-b329-b30efa331693) | ➡️ ➡️ ➡️ | ![두 번째 이미지](https://github.com/user-attachments/assets/22e793f9-8c5b-4d7d-81cb-e34957802719) |
+| ![첫 번째 이미지](https://github.com/user-attachments/assets/fb6f9afd-9fa6-4dd4-b329-b30efa331693) |  ➡️  | ![두 번째 이미지](https://github.com/user-attachments/assets/22e793f9-8c5b-4d7d-81cb-e34957802719) |
 
 > **Item Structure**<br/>
 
