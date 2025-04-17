@@ -26,7 +26,8 @@
 
 ## Boss
 ● 제작방식 : BehaviorTree <br/>
-| ![왼쪽 위](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) | ![오른쪽 위](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) |
+| 왼쪽 위 | 오른쪽 위 |
 |:--:|:--:|
-| ![왼쪽 아래](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222) | ![오른쪽 아래](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d) |
+| ![왼쪽 위](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6)<br/>왼쪽 위 | ![오른쪽 위](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4)<br/>오른쪽 위 |
+| ![왼쪽 아래](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/>왼쪽 아래 | ![오른쪽 아래](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/>오른쪽 아래 |
 
