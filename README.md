@@ -8,7 +8,7 @@
 
 # 사용한 개발 도구<br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;● Microsoft Visual Studio Community<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Microsoft Visual Studio <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Blender<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● GithubDesktop<br/>
 
