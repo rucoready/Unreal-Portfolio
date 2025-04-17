@@ -25,14 +25,14 @@
 # 기술 설명
 
 ## Boss
-던전 마지막에 배치된 복잡한 AI
-● BehaviorTree 동작방식 <br/>
-● BossWidget 관리 <br/>
-● BossBlackBoard 관리 <br/>
-● 네트워크 동기화 <br/>
-● Service Node, Decorator Node를 사용한 여러가지 조건 체크<br/>
-● Blackboard과 BehaviorTree의 상호작용<br/>
-● 각각 Task에서 독립적인 패턴 구현<br/>
+던전 마지막에 배치된 복잡한 AI<br/>
+  ● BehaviorTree 동작방식 <br/>
+  ● BossWidget 관리 <br/>
+  ● BossBlackBoard 관리 <br/>
+  ● 네트워크 동기화 <br/>
+  ● Service Node, Decorator Node를 사용한 여러가지 조건 체크<br/>
+  ● Blackboard과 BehaviorTree의 상호작용<br/>
+  ● 각각 Task에서 독립적인 패턴 구현<br/>
 
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
