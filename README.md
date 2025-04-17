@@ -4,7 +4,7 @@
 <br/>
 ● 엔진 : Unreal Engine5 5.4 <br/>
 ● 규모 : 3인 <br/>
-● 제작기간 : 5주 <br/>
+● 제작기간 : 4주 <br/>
 
 # 사용한 개발 도구<br/>
 ● Microsoft Visual Studio Community<br/>
@@ -14,6 +14,7 @@
 # Packging File
 ● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link
 
-## 📹 데모 동영상  
+# 🎥 데모 동영상  
+Youtube
 [![Youtube](https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg)](https://youtu.be/PPo4rxRjsWc)
 
