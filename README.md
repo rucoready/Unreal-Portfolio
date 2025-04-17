@@ -12,7 +12,7 @@
 ● GithubDesktop<br/>
 
 # 데모 영상
-| SinglePlay<Action> | MultiPlay<Build> |
+| SinglePlay,Action | MultiPlay,Build |
 | --- | --- |
 | <a href="https://youtu.be/PPo4rxRjsWc"><img src="https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg" width="300"></a> | <a href="https://youtu.be/9zh2KllxqSw"><img src="https://img.youtube.com/vi/9zh2KllxqSw/0.jpg" width="300"></a> |
 
