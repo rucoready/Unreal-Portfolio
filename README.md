@@ -25,6 +25,7 @@
 # 기술 설명
 
 ## Boss
+던전 마지막에 배치된 복잡한 AI
 ● BehaviorTree 동작방식 <br/>
 ● BossWidget 관리 <br/>
 ● BossBlackBoard 관리 <br/>
@@ -41,5 +42,9 @@
 |:--:|:--:|
 | ![Phase3](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222)<br/><sub></sub> | ![Phase4](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d)<br/><sub></sub> |<br/>
 
-
+## Enemy AI
+맵에 배치된 기본적인 적AI
+● BehaviorTree 동작방식 <br/>
+● StateMachine 상반신 하반신 개별화 <br/>
+● 독자적 개인 시야각 적용 <br/>
 
