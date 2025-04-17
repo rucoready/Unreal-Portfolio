@@ -14,6 +14,6 @@
 # Packging File
 ● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link
 
-# 데모 영상
-[🎥 시연 영상 보기](https://youtu.be/PPo4rxRjsWc)
+## 📹 데모 동영상  
+[![Youtube](https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg)](https://youtu.be/PPo4rxRjsWc)
 
