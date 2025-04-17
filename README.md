@@ -209,14 +209,14 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 
 <table style="width: 100%; text-align: center;">
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472" width="100"></td>
-    <td><img src="https://github.com/user-attachments/assets/bbd4e4be-a4dd-4b1b-ad49-3ab117255f86" width="100"></td>
-    <td><img src="https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6" width="100"></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a" width="100"></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td>
+    <td><img src="https://via.placeholder.com/100" width="100"></td> <!-- 여기에 이미지를 추가 -->
     <td></td> <!-- 빈 칸을 두어 정렬 -->
-    <td></td>
   </tr>
 </table>
 
