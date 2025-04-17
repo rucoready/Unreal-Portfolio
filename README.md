@@ -20,7 +20,7 @@
 ● SinglePlayer 영상 -> CombatSystem 설명 <br/>
 ● SinglePlayer 영상 -> 멀티플레이 및 크래프팅 설명<br/>
 
-# Packging File
+# Packaging File
 > **DownLoad Link**<br/>
 ● https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link <br/>
 
