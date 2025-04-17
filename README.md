@@ -52,9 +52,23 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● 독자적 개인 시야각 적용 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 데미지 출력 HUD <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 아이템 확률드랍 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 네트워크 동기화 <br/>
 | Grux | Dog |
 |:--:|:--:|
 | <div align="center"> ![왼쪽 위](https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472) </div> | <div align="center"> ![오른쪽 위](https://github.com/user-attachments/assets/bbd4e4be-a4dd-4b1b-ad49-3ab117255f86) </div> |
 | <div align="center"> ![왼쪽 아래](https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a) </div> | <div align="center"> ![오른쪽 아래](https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6) </div> |
+
+## Crafting
+크래프팅 시스템<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 데이터 테이블로 관리하는 쉬운 에셋추가 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 구조체를 사용한 쉬운 레시피, 수량 제어 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Name위젯 , Recipe위젯  CraftingWidget의 값 제어 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 소켓에 따른 스냅방식 HUD <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● 프리뷰 메시를 사용한 시각적 표현 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Folliage Actor의 별도 인스턴스화 <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;● Tag방식 <br/>
+
+
+
 
 
