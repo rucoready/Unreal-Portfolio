@@ -209,11 +209,9 @@ void UTask_DogBartPatrol::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* Nod
 &nbsp;&nbsp;&nbsp;&nbsp;● Folliage Actor의 별도 인스턴스화 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;● Tag방식 <br/>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/fb6f9afd-9fa6-4dd4-b329-b30efa331693" width="300"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;➡️➡️➡️&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/22e793f9-8c5b-4d7d-81cb-e34957802719" width="300"/>
-</p>
+|   |   |   |
+|---|---|---|
+| ![첫 번째 이미지](https://github.com/user-attachments/assets/fb6f9afd-9fa6-4dd4-b329-b30efa331693) | ➡️ ➡️ ➡️ | ![두 번째 이미지](https://github.com/user-attachments/assets/22e793f9-8c5b-4d7d-81cb-e34957802719) |
 
 
 
