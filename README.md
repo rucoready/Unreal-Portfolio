@@ -25,6 +25,7 @@
 # 기술 설명
 
 ## Boss
+● ㅇ
 ● 제작방식 : BehaviorTree <br/>
 | Phase1 Nodes | Phase2 Nodes |
 |:--:|:--:|
