@@ -12,9 +12,8 @@
 ● GithubDesktop<br/>
 
 # Packging File
-https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link
+● Link : https://drive.google.com/file/d/1Kx00sBZXGBgPO2W_-GXQI02bvHIhqV7Y/view?usp=drive_link
 
 # 데모 영상
-
-
+![Watch the video](https://img.youtube.com/vi/PPo4rxRjsWc/0.jpg)](https://www.youtube.com/watch?v=PPo4rxRjsWc)
 
