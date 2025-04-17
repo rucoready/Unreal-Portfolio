@@ -54,7 +54,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;● 여러가지 아이템 확률드랍 <br/>
 | Grux | Dog |
 |:--:|:--:|
-| <div align="center"> ![Phase1 Thumbnail](https://github.com/user-attachments/assets/b2c2124e-21c3-4aa2-9dfe-5cccb43684e6) <br/><sub></sub> </div> | <div align="center"> ![Phase2 Thumbnail](https://github.com/user-attachments/assets/cfef0d85-6d41-4863-98f6-33b1b51c47c4) <br/><sub></sub> </div> |
-| <div align="center"> ![Phase1 Explanation](https://github.com/user-attachments/assets/661f0aaf-756f-4a8a-81f1-82f447ea6222) <br/><sub></sub> </div> | <div align="center"> ![Phase2 Explanation](https://github.com/user-attachments/assets/088dfdb6-a959-4a48-9530-d5d0f2578e5d) <br/><sub></sub> </div> |
+| <div align="center"> ![왼쪽 위](https://github.com/user-attachments/assets/df94cdcc-cfee-4583-9248-461bde2f5472) </div> | <div align="center"> ![오른쪽 위](https://github.com/user-attachments/assets/13c101e8-f92e-4570-a7bd-5d8507171996) </div> |
+| <div align="center"> ![왼쪽 아래](https://github.com/user-attachments/assets/4eaa73d2-e43c-45a0-a112-fc89318e229a) </div> | <div align="center"> ![오른쪽 아래](https://github.com/user-attachments/assets/8a78faf6-cc62-4232-8241-b12da5d8bef6) </div> |
 
 
